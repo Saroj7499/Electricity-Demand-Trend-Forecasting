@@ -63,21 +63,23 @@ A simple Linear Regression model was chosen to establish a clear and interpretab
     -Seasonal effects were analyzed separately; advanced models (SARIMA) are recommended for future improvements. 
 
 ## Tableau Dashboard
-An interactive Tableau dashboard was built to analyze Swiggy’s food delivery operations and customer behavior.
-The dashboard enables stakeholders to quickly assess restaurant performance, customer loyalty, delivery efficiency, and demand patterns.
+The Tableau dashboard was designed to provide a high-level performance view of electricity demand across major Indian states,
+along with historical demand trends to support strategic energy planning and decision-making.
 
-**Key Insights Visualized:**
-   -Fastest delivery and highest revenue-generating restaurants
-   -Most ordered dishes and cuisine preferences
-   -Loyal customers based on repeat orders
-   -Order trend analysis over time
-   -Relationship between delivery time and restaurant ratings
-   -Veg vs Non-Veg demand distribution
+## Key KPIs Displayed
 
-**Business Impact:**
-   -Helps operations teams optimize delivery efficiency
-   -Supports marketing teams in identifying loyal customers
-   -Assists management in revenue and partner performance evaluation
+**Total Electricity Demand**
+      -Cumulative electricity demand (in Million Units) across all regions and years.
+**Peak Demand**
+      -Highest recorded demand value, helping identify system stress periods.
+**Average Demand**
+      -Mean electricity demand, used to understand baseline consumption levels.
+**Demand Volatility**
+      -Standard deviation of demand values, indicating variability and stability of demand patterns.
+
+**Business Insight:**
+      -Helps policymakers and planners understand long-term demand growth and external impact periods.
+      -Supports region-specific infrastructure planning and capacity allocation.
 
 ## Dashboard Title:
 Electricity Demand Performance & Trend Analysis
