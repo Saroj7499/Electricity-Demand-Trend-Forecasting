@@ -56,11 +56,13 @@ The dataset contains daily electricity demand records across multiple Indian sta
    - Simple and interpretable baseline model
    - Clearly explains long-term trend behavior
    - Suitable for management-level forecasting discussions
+     
 **Note:** Seasonal effects were analyzed separately. Advanced models like SARIMA can further improve forecast accuracy in future work.
 
 ## Tableau Dashboard
 The Tableau dashboard was designed to provide a high-level performance view of electricity demand across major Indian states,
 along with historical demand trends to support strategic energy planning and decision-making.
+
 **Key KPIs Displayed**
 **Total Demand:** Cumulative electricity demand across all regions.
 **Peak Demand** Highest recorded demand value, helping identify system stress periods.
