@@ -64,10 +64,11 @@ The Tableau dashboard was designed to provide a high-level performance view of e
 along with historical demand trends to support strategic energy planning and decision-making.
 
 **Key KPIs Displayed**
-**Total Demand:** Cumulative electricity demand across all regions.
-**Peak Demand** Highest recorded demand value, helping identify system stress periods.
-**Average Demand** Baseline electricity consumption
-**Demand Volatility** Variability of demand patterns
+
+**Total Demand:** Cumulative electricity demand across all regions. 
+**Peak Demand** Highest recorded demand value, helping identify system stress periods. 
+**Average Demand** Baseline electricity consumption.
+**Demand Volatility** Variability of demand patterns.
 
 **Visual Insights**
    - Year-wise electricity demand trend
