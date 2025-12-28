@@ -51,7 +51,8 @@ The dataset contains daily electricity demand records across multiple Indian sta
    - Performed seasonal decomposition to study trend and seasonality
    - Applied Linear Regression to model long-term demand trend
    - Forecasted electricity demand for the next 12 months
-**Why Linear Regression?**
+     
+## Why Linear Regression?
    - Simple and interpretable baseline model
    - Clearly explains long-term trend behavior
    - Suitable for management-level forecasting discussions
@@ -60,15 +61,13 @@ The dataset contains daily electricity demand records across multiple Indian sta
 ## Tableau Dashboard
 The Tableau dashboard was designed to provide a high-level performance view of electricity demand across major Indian states,
 along with historical demand trends to support strategic energy planning and decision-making.
-
-## Key KPIs Displayed
-
+**Key KPIs Displayed**
 **Total Demand:** Cumulative electricity demand across all regions.
 **Peak Demand** Highest recorded demand value, helping identify system stress periods.
 **Average Demand** Baseline electricity consumption
 **Demand Volatility** Variability of demand patterns
 
-## Visual Insights
+**Visual Insights**
    - Year-wise electricity demand trend
    - Region-wise demand comparison
    - Identification of high-consumption states
