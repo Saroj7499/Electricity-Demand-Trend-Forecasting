@@ -5,14 +5,15 @@ This project analyzes historical electricity demand data across multiple Indian 
 The primary focus is on Maharashtra, where monthly electricity demand is forecasted using time series techniques.
 The project combines SQL analysis, Python-based forecasting, and Tableau visualization to simulate a real-world energy demand analysis use case.
 
-## Objective
+## Project Objective
    - Analyze electricity demand trends over time
    - Identify seasonality, volatility, and regional demand differences
    - Forecast monthly electricity demand for Maharashtra
    - Present insights through an interactive Tableau dashboard
 
 ## Dataset Description
-The dataset contains daily electricity demand values with the following fields:
+The dataset contains daily electricity demand records across multiple Indian states.
+**Key Fields:**
    - Date – Daily record date
    - Region – State name
    - demand_MU – Electricity demand in Million Units (MU)
@@ -27,40 +28,34 @@ The dataset contains daily electricity demand values with the following fields:
    - **Tableau**: Interactive management dashboard
 
 ## Key KPIs Analyzed
-   - Total electricity demand by region
-   - Demand volatility (standard deviation) by region
-   - Monthly demand trend for Maharashtra
-   - Seasonal demand patterns
-   - Historical vs future demand forecast
+   - Total Electricity Demand by region
+   - Peak Demand (maximum recorded demand)
+   - Average Demand (baseline consumption level)
+   - Demand Volatility (standard deviation of demand)
+   - Monthly Demand Trend for Maharashtra
+   - Historical vs Forecasted Demand
 
-## Analysis & Observations  
+## Analysis & Key Observations  
    - Overall electricity demand shows a long-term increasing trend
    - Clear seasonal patterns are visible in pre-2020 data
    - Demand remained relatively stable during 2020–2022, likely due to COVID-related effects
    - Maharashtra consistently ranks among the highest electricity-consuming states
    - Monthly aggregation provided more reliable forecasting than daily demand due to reduced noise
 
-## Forecasting Approach
+## Forecasting Methodology (Python)
+**Steps Followed:**
+   - Parsed and corrected date formats
    - Filtered data for Maharashtra
    - Converted daily demand into monthly demand
-   - Removed missing and incomplete months
-   - Applied trend-based time series modeling
+   - Removed incomplete initial months to avoid biased aggregation
+   - Performed seasonal decomposition to study trend and seasonality
+   - Applied Linear Regression to model long-term demand trend
    - Forecasted electricity demand for the next 12 months
-A simple Linear Regression model was chosen to establish a clear and interpretable demand trend.
-
-## Python & Forecasting Section
-**Python was used for time-series analysis and forecasting. Key steps included:**
-    -Date parsing and data type correction
-    -Regional filtering (Maharashtra)
-    -Daily-to-monthly aggregation to reduce noise
-    -Seasonal decomposition to identify trend and seasonal components
-    -Linear Regression modeling to establish long-term demand trend
-**Data Quality Handling:**
-    -Initial months with incomplete daily records were excluded to prevent biased aggregation.
-
-**Forecasting Rationale:**
-    -Linear Regression was selected for interpretability and baseline trend estimation.
-    -Seasonal effects were analyzed separately; advanced models (SARIMA) are recommended for future improvements. 
+**Why Linear Regression?**
+   - Simple and interpretable baseline model
+   - Clearly explains long-term trend behavior
+   - Suitable for management-level forecasting discussions
+**Note:** Seasonal effects were analyzed separately. Advanced models like SARIMA can further improve forecast accuracy in future work.
 
 ## Tableau Dashboard
 The Tableau dashboard was designed to provide a high-level performance view of electricity demand across major Indian states,
@@ -68,21 +63,19 @@ along with historical demand trends to support strategic energy planning and dec
 
 ## Key KPIs Displayed
 
-**Total Electricity Demand**
-      -Cumulative electricity demand (in Million Units) across all regions and years.
-**Peak Demand**
-      -Highest recorded demand value, helping identify system stress periods.
-**Average Demand**
-      -Mean electricity demand, used to understand baseline consumption levels.
-**Demand Volatility**
-      -Standard deviation of demand values, indicating variability and stability of demand patterns.
+**Total Demand:** Cumulative electricity demand across all regions.
+**Peak Demand** Highest recorded demand value, helping identify system stress periods.
+**Average Demand** Baseline electricity consumption
+**Demand Volatility** Variability of demand patterns
 
-**Business Insight:**
-      -Helps policymakers and planners understand long-term demand growth and external impact periods.
-      -Supports region-specific infrastructure planning and capacity allocation.
+## Visual Insights
+   - Year-wise electricity demand trend
+   - Region-wise demand comparison
+   - Identification of high-consumption states
+   - Impact periods such as demand drops and recoveries
 
 ## Dashboard Title:
-Electricity Demand Performance & Trend Analysis
+**Electricity Demand Performance & Trend Analysis**
 
 ## Business Value
    - Helps energy planners anticipate future electricity demand
@@ -91,5 +84,5 @@ Electricity Demand Performance & Trend Analysis
    - Demonstrates a complete data analysis workflow from raw data to insights
 
  ## Conclusion
-This project demonstrates an end-to-end data analytics pipeline using SQL, Python, and Tableau to solve a real-world electricity demand forecasting problem.
-It emphasizes structured data preparation, analytical thinking, and business-focused storytelling.
+This project demonstrates a complete data analytics pipeline—from raw data to business insights—using SQL, Python, and Tableau.
+It highlights strong analytical thinking, forecasting fundamentals, and business storytelling, making it suitable for real-world energy demand analysis scenarios.
